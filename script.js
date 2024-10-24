@@ -1,4 +1,3 @@
-
 const containerPage = document.querySelector('.customForm');
 const form = document.querySelector('form');
 const userLastname = document.getElementById('lastname');
