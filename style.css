@@ -35,7 +35,7 @@ html {
 
 /* Intro section styles */
 .section-intro {
-  height: auto;
+  height: 800px;
   background-image: url(foto1.png); /* Replace with your image path */
   background-size: cover; /* Make image cover the entire section */
   display: flex;
@@ -98,7 +98,8 @@ a.link-to-book:hover {
 
 /* Carousel styles (optional) */
 .carousel-inner {
-  height: 500px;
+  height:auto;
+  min-height:30px;
 }
 
 /* Responsive row styles */
