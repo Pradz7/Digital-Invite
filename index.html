@@ -8,7 +8,16 @@
     <link rel="stylesheet" href="style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "gWQ_WhSNQYpsC_KBW",
+      });
+   })();
+</script>
     <title>DigitalInvite.id</title>
   </head>
   <body>
@@ -85,7 +94,7 @@
               <input type="email" class="form-control" id="InputEmail" placeholder="Enter your email address" required>
           </div>
           <div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" onclick="sendMail()" class="btn btn-primary">Submit</button>
           </div>
       </form>
       </div>
